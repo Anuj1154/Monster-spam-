@@ -24,7 +24,7 @@ async def ping(e):
         jarvis = await e.reply(f"ᴥ︎︎︎ 𝐉𝐀𝐑𝐕𝐈𝐒 ✔︎")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"[𝐉𝐀𝐑𝐕𝐈𝐒 𝐈𝐒 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎  ](https://t.me/JARVIS_X_SUPPORT)[𝐅𝐔𝐂𝐊 𝐇𝐀𝐓𝐄𝐑𝐒 🥀](https://t.me/CHATTING_2024)🤖\n» `{mp} ᴍꜱ`")
+        await jarvis.edit(f"[𝐌𝐎𝐍𝐒𝐓𝐄𝐑 𝐈𝐒 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎  ](https://t.me/monster_king_is_here)[𝐅𝐔𝐂𝐊 𝐇𝐀𝐓𝐄𝐑𝐒 🥀](https://t.me/monster_discussion)🤖\n» `{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __Jarvis Ka Ek Beta Aur Add Ho rha hai..__")
+        ok = await event.reply(f"» __Monster Ka Ek Beta Aur Add Ho rha hai..__")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -117,7 +117,7 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"YE BHI JARVIS KA HI BACHA HAI.. !!")
+            await ok.edit(f"YE BHI MONSTER KA HI BACHA HAI.. !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
@@ -127,7 +127,7 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» BSDK SIRF JARVIS SUDO DE SKTA HAI...")
+        await event.reply("» BSDK SIRF MONSTER SUDO DE SKTA HAI...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
@@ -143,7 +143,7 @@ async def removesudo(event):
     if event.sender_id == OWNER_ID:
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
-        ok = await event.reply(f"YE Jarvis Ki Najayaz Aulad thi isiliye nikal diya💋...")
+        ok = await event.reply(f"YE Monster Ki Najayaz Aulad thi isiliye nikal diya💋...")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
