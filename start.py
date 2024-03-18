@@ -8,8 +8,8 @@ START_BUTTON = [
         Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_X_SUPPORT"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/CHATTING_2024")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/monster_king_is_here"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/monster_discussion")
     ],
     [
         Button.url("• ʀᴇᴘᴏ •", "https://github.com/doraemon890/JARVIS-X-SPAM")
@@ -40,7 +40,7 @@ async def start(event):
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
               event.chat_id,
-                    "https://telegra.ph/file/ee9a464bb8c1a5277f6c3.jpg",
+                    "https://graph.org/file/38343b1ece04117d60ac8.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
